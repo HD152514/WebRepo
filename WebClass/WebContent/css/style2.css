@@ -1,0 +1,18 @@
+div.container{
+	padding-top: 30px;
+}
+
+#asdf{
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+#carouselExampleControls{
+	width:50%; 
+	display: block;
+}
+
+body{
+	background-color:#FFE08C; 
+	color:#2E2E2E"
+}

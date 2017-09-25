@@ -1,0 +1,15 @@
+div.container{
+           padding-top: 30px;
+        }
+
+body{
+	background-color:#585858; 
+	color:white;	
+}
+
+.modal-title{
+	color:black;
+}
+.modal-body{
+	color:black;
+}

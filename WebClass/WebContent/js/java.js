@@ -17,13 +17,19 @@ $(document).ready(function (){
        console.log(id,pwd);
        
        //서버로 post전송(djax호출방식) 더미서버 이용
-       $.post("http://httpbin.org/post",
+       $.post("/WebClass/login",
              {"id" : id,"pwd" : pwd },
              function(data){
-                //alert(data.form.id+'님 로그인되었습니다.');
-                var myModal= $('#myModal');
-                myModal.modal();
-                myModal.find('.modal-body').text(data.form.id+'님 로그인되었습니다.')
+                if(data.msg == "good"){
+                	console.log("good");
+                	location.href = "/WebClass/MyBlog/Home.jsp";
+                }else{
+                	console.log("nope");
+                	var myModal= $('#myModal');
+                    myModal.modal();
+                    myModal.find('.modal-body').text('잘못된 정보 입니다.');
+                    $('#pwd').val("");
+                }
              });
     });
  });

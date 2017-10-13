@@ -18,9 +18,8 @@
   </head>
   
   <body>
-  <!-- ë©ë´ë° -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand active" href="/WebClass/MyBlog/Home.hsp" >ë°ë³´í</a>
+  <a class="navbar-brand active" href="/WebClass/MyBlog/Home.hsp" >박보현</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,7 +27,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-        <a class="nav-link" href="/WebClass/MyBlog/join.jsp" target="blank">íìê°ì</a>
+        <a class="nav-link" href="/WebClass/MyBlog/join.jsp" target="blank">Join</a>
       </li>
       <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
         <a class="nav-link" href="/WebClass/MyBlog/Introduce.jsp">Introduce</a>
@@ -58,7 +57,7 @@
           <%= user.getName()%>님
          </a>
          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
-            <form action = "/WebClass/logout" method = "post">
+            <form action = "/WebClass/bloglogout" method = "post">
             <button type="submit" class="dropdown-item">Sign out</button>
             </form>
              <div class="dropdown-divider"></div>
@@ -73,16 +72,15 @@
   </div>
 </nav>
    <div class="container">
-       <h1>ìëíì¸ì!</h1>
-      <p>ì  ê°ì¸ ë¸ë¡ê·¸ì ìì£¼ìì ê°ì¬í©ëë¤. ë´ì©ì ë¶ëë¬ì°ëê¹ ì ìëë§ ì½ì´ì£¼ì¨ì¼ë©´ ì¢ê² ìµëë¤!<br>
-      	ìë° ì ìëì´ ìëìë©´ ì´ ì°½ì êº¼ì£¼ì¸ì ~~~!!</p>
+       <h1>안녕하세요!</h1>
+      <p>자바 수행을 위한 '블로그 만들기'입니다. 부끄러운 내용이 많으니 자바선생님만 읽어주세요 ~~~!! </p>
    </div>
    
    <div class="modal" id="myModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">ë¡ê·¸ì¸ ê²°ê³¼</h5>
+        <h5 class="modal-title">로그인</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

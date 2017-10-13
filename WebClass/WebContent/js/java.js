@@ -17,7 +17,7 @@ $(document).ready(function (){
        console.log(id,pwd);
        
        //서버로 post전송(djax호출방식) 더미서버 이용
-       $.post("/WebClass/login",
+       $.post("/WebClass/bloglogin",
              {"id" : id,"pwd" : pwd },
              function(data){
                 if(data.msg == "good"){
